@@ -1,9 +1,13 @@
 import './App.css';
 import Instructions from "./components/Instructions";
+import Range from "./components/Input";
 
 function App() {
   return (
-    <Instructions />
+      <div>
+        <Instructions />
+        <Range />
+      </div>
   );
 }
 
