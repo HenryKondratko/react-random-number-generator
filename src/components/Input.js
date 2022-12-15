@@ -16,7 +16,7 @@ const Range = ({inputs, setInputs, setResult}) => {
 
     return (
         <form onSubmit={submitHandler}>
-            <label htmlFor="minimum">Minimum</label>
+            <label htmlFor="minimum">Minimum:</label>
             <input
                 type="text"
                 id="minimum"
@@ -24,7 +24,7 @@ const Range = ({inputs, setInputs, setResult}) => {
                 onChange={inputChangeHandler}
             />
 
-            <label htmlFor="maximum">Maximum</label>
+            <label htmlFor="maximum">Maximum:</label>
             <input
                 type="text"
                 id="maximum"
