@@ -19,5 +19,11 @@ describe('render tests', () => {
         const maximumInputText = screen.getByText("Maximum");
         expect(maximumInputText).toBeInTheDocument();
     });
+
+    test('renders generate button', () => {
+        render(<App/>);
+        const maximumInputText = screen.getByText("Generate");
+        expect(maximumInputText).toBeInTheDocument();
+    });
 });
 
