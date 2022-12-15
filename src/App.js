@@ -9,7 +9,8 @@ function App() {
     const [result, setResult] = useState();
 
     return (
-        <div>
+        <div className="container">
+            <h1>Random Number Generator</h1>
             <Instructions/>
             <Range
                 inputs={inputs}
