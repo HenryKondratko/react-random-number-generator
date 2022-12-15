@@ -1,7 +1,7 @@
-const Result = () => {
+const Result = (result) => {
     return(
         <div>
-            <h1>Result</h1>
+            <h1>{result.result}</h1>
         </div>
     )
 };

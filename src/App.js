@@ -6,6 +6,7 @@ import {useState} from "react";
 
 function App() {
     const [inputs, setInputs] = useState({});
+    const [result, setResult] = useState();
 
     return (
         <div>
@@ -13,8 +14,9 @@ function App() {
             <Range
                 inputs={inputs}
                 setInputs={setInputs}
+                setResult={setResult}
             />
-            <Result/>
+            <Result result={result}/>
         </div>
     );
 }
