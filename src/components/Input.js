@@ -1,6 +1,7 @@
 import Generate from "./Generate";
+import "./Input.css";
 
-const Range = ({ inputs, setInputs, setResult }) => {
+const Range = ({inputs, setInputs, setResult}) => {
     function submitHandler(event) {
         event.preventDefault();
         console.log(inputs)
@@ -30,11 +31,13 @@ const Range = ({ inputs, setInputs, setResult }) => {
                 name="maximum"
                 onChange={inputChangeHandler}
             />
-            <Generate
-                minimum={inputs.minimum}
-                maximum={inputs.maximum}
-                setResult={setResult}
-            />
+            <div>
+                <Generate
+                    minimum={inputs.minimum}
+                    maximum={inputs.maximum}
+                    setResult={setResult}
+                />
+            </div>
         </form>
     )
 };

@@ -1,3 +1,5 @@
+import "./Generate.css";
+
 const Generate = ({ minimum, maximum, setResult }) => {
     function clickHandler() {
         const min = parseInt(minimum);
