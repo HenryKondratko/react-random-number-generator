@@ -1,8 +1,4 @@
-import {useState} from "react";
-
-const Range = () => {
-    const [inputs, setInputs] = useState({});
-
+const Range = ({ inputs, setInputs }) => {
     function submitHandler(event) {
         event.preventDefault();
         console.log(inputs)
